@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .text-container {
+    flex: 1;
+    max-width: 50%;
+    margin-right: 20px;
+  }
+  
+  .image-container {
+    flex: 1;
+    max-width: 50%;
+    margin-left: 20px;
+  }
+  
+  h2 {
+    color: #ff3700;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    margin-top: 20px;
+  }
+  
