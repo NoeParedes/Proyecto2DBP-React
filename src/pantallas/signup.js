@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import './signup.css';
 
 const Signup = () => {
-  const [nombre, setNombre] = useState('');
+  const [nombre,     setNombre] = useState('');
   const [apellido, setApellido] = useState('');
   const [username, setUsername] = useState('');
-  const [correo, setCorreo] = useState('');
+  const [correo,     setCorreo] = useState('');
   const [password, setPassword] = useState('');
 
   const signup = () => {
@@ -23,9 +24,7 @@ const Signup = () => {
 
     fetch('http://127.0.0.1:5000/users', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json', },
       body: JSON.stringify(data),
     })
       .then(response => response.text())
@@ -40,62 +39,54 @@ const Signup = () => {
   };
 
   return (
-    <div>
-      <h1>Create account</h1>
+    <div class="sign_up_form">
+
+      <h1> Creando una nueva cuenta </h1>
+      <br/>
+
       <form>
-        <label htmlFor="nombre">Nombre:</label>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          value={nombre}
-          onChange={(e) => setNombre(e.target.value)}
-          required
-        /><br /><br />
+        <div class="input-info">
+        <label htmlFor="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre" 
+          value={nombre} 
+          onChange={(e) => setNombre(e.target.value)} 
+          required />
+        </div>
 
-        <label htmlFor="apellido">Apellido:</label>
-        <input
-          type="text"
-          id="apellido"
-          name="apellido"
-          value={apellido}
-          onChange={(e) => setApellido(e.target.value)}
-          required
-        /><br /><br />
+        <div class="input-info">
+        <label htmlFor="apellido"> Apellido: </label>
+        <input type="text" id="apellido" name="apellido"
+          value={apellido} 
+          onChange={(e) => setApellido(e.target.value)} 
+          required />
+        </div>
 
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
+        <div class="input-info"> 
+        <label htmlFor="username"> Username: </label>
+        <input type="text" id="username" name="username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          required
-        /><br /><br />
+          required/>
+        </div>
 
-        <label htmlFor="correo">Correo:</label>
-        <input
-          type="email"
-          id="correo"
-          name="correo"
+        <div class="input-info"> 
+        <label htmlFor="correo"> Correo: </label>
+        <input type="email" id="correo" name="correo"
           value={correo}
           onChange={(e) => setCorreo(e.target.value)}
-          required
-        /><br /><br />
+          required/>
+        </div>
 
-        <label htmlFor="password">Contraseña:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
+        <div class="input-info">
+        <label htmlFor="password"> Contraseña: </label>
+        <input type="password" id="password" name="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          required
-        /><br /><br />
+          required />
+        </div>
 
-        <a href="/login">¿Ya tienes una cuenta?</a><br /><br />
-
-        <button type="button" onClick={signup}>Add user</button>
+        <p> ¿Ya tienes una cuenta? <a href="/login"> Inicie sesión </a> </p>
+        <button type="button" onClick={signup}> Crear cuenta </button>
       </form>
     </div>
   );
