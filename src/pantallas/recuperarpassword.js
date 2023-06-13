@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Password = () => {
   const [correo, setCorreo] = useState('');
 
-  const handleLogin = () => {
+  const handlePassword = () => {
     if (correo === '') {
       alert('Por favor ingrese su correo.');
       return;
@@ -41,7 +41,7 @@ const Password = () => {
         required
       /><br /><br />
 
-      <button type="button" onClick={handleLogin}>Enviar por correo</button>
+      <button type="button" onClick={handlePassword}>Enviar por correo</button>
     </div>
   );
 };
