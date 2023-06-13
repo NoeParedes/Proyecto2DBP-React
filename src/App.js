@@ -9,6 +9,7 @@ import Redireccion from './pantallas/redireccion';
 import Default from './pantallas/default';
 import Signup from './pantallas/signup';
 import Login from './pantallas/login';
+import Password from './pantallas/recuperarpassword';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/contactos" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/recuperarpassword" element={<Password />} />
         <Route path="*" element={<Default />} />
       </Routes>
     </div>

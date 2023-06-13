@@ -61,6 +61,9 @@ const Login = () => {
         /><br /><br />
 
         <button type="button" onClick={handleLogin}>Login</button>
+               
+        <p><a href="/recuperarpassword">¿Olvidaste tu contraseña?</a></p>
+
       </form>
     </div>
   );
