@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './signup.css';
+import '../estilos/signup.css';
 
 const Signup = () => {
-  const [nombre,     setNombre] = useState('');
+  const [nombre, setNombre] = useState('');
   const [apellido, setApellido] = useState('');
   const [username, setUsername] = useState('');
-  const [correo,     setCorreo] = useState('');
+  const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
 
   const signup = () => {
@@ -24,7 +24,7 @@ const Signup = () => {
 
     fetch('http://127.0.0.1:5000/users', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     })
       .then(response => response.text())
@@ -39,55 +39,79 @@ const Signup = () => {
   };
 
   return (
-    <div class="sign_up_form">
-
-      <h1> Creando una nueva cuenta </h1>
-      <br/>
-
+    <div className="containerr">
+      <h2>Sign Up</h2>
       <form>
-        <div class="input-info">
-        <label htmlFor="nombre"> Nombre: </label>
-        <input type="text" id="nombre" name="nombre" 
-          value={nombre} 
-          onChange={(e) => setNombre(e.target.value)} 
-          required />
+        <div className="row">
+          <div className="col">
+            <input
+              type="text"
+              name="nombre"
+              id='nombre'
+              placeholder="First Name"
+              value={nombre}
+              onChange={e => setNombre(e.target.value)}
+              required
+            />
+          </div>
+          <div className="col">
+            <input
+              type="text"
+              name="apellido"
+              id='apellido'
+              placeholder="Last Name"
+              value={apellido}
+              onChange={e => setApellido(e.target.value)}
+              required
+            />
+          </div>
         </div>
-
-        <div class="input-info">
-        <label htmlFor="apellido"> Apellido: </label>
-        <input type="text" id="apellido" name="apellido"
-          value={apellido} 
-          onChange={(e) => setApellido(e.target.value)} 
-          required />
+        <div className="row">
+          <div className="col">
+            <input
+              type="text"
+              name="username"
+              id='username'
+              placeholder="Username"
+              className="username"
+              value={username}
+              onChange={e => setUsername(e.target.value)}
+              required
+            />
+          </div>
         </div>
-
-        <div class="input-info"> 
-        <label htmlFor="username"> Username: </label>
-        <input type="text" id="username" name="username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required/>
+        <div className="row">
+          <div className="col">
+            <input
+              type="email"
+              id='correo'
+              name="correo"
+              placeholder="Email"
+              value={correo}
+              onChange={e => setCorreo(e.target.value)}
+              required
+            />
+          </div>
         </div>
-
-        <div class="input-info"> 
-        <label htmlFor="correo"> Correo: </label>
-        <input type="email" id="correo" name="correo"
-          value={correo}
-          onChange={(e) => setCorreo(e.target.value)}
-          required/>
+        <div className="row">
+          <div className="col">
+            <input
+              type="password"
+              name="password"
+              id='password'
+              placeholder="Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              required
+            />
+          </div>
         </div>
-
-        <div class="input-info">
-        <label htmlFor="password"> Contraseña: </label>
-        <input type="password" id="password" name="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required />
-        </div>
-
-        <p> ¿Ya tienes una cuenta? <a href="/login"> Inicie sesión </a> </p>
-        <button type="button" onClick={signup}> Crear cuenta </button>
+        
       </form>
+      <p>
+        Already have an account? <a className="login-link" href="/login">Log in</a>
+      </p>
+      <button type='button' onClick={signup}>Sign Up</button>
     </div>
   );
 };

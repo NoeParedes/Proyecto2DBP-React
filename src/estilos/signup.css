@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+h2{
+  top: 100%;
+}
+.containerr {
+  max-width: 800px;
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+  border: 2px solid orange;
+  background-color: black;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.row .col {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.row .col:last-child {
+  margin-right: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 88%;
+  padding: 10px;
+  border: none;
+  background-color: #222;
+  color: white;
+  margin-bottom: 10px;
+}
+
+input[type="text"].username {
+  width: 94%;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 94%;
+}
+
+button[type="button"] {
+  width: 99%;
+  padding: 10px;
+  border: none;
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+}
+
+.login-link {
+  color: orange;
+  text-decoration: none;
+}
+
+p{
+  font-size: 15px;
+}

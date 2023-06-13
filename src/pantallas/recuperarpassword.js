@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../estilos/recuperarpassword.css"
 const Password = () => {
   const [correo, setCorreo] = useState('');
 
@@ -29,21 +29,21 @@ const Password = () => {
   };
 
   return (
-    <div>
-      <h1>Recuperar Contraseña</h1>
-      <label htmlFor="correo">Correo:</label>
-      <input
-        type="email"
-        id="correo"
-        name="correo"
-        value={correo}
-        onChange={(e) => setCorreo(e.target.value)}
-        required
-      /><br /><br />
+  <div className="recuperar-form">
+  <h1>Recuperar Contraseña</h1>
+  <label htmlFor="correo">Correo:</label>
+  <input
+    type="email"
+    id="correo"
+    name="correo"
+    value={correo}
+    onChange={e => setCorreo(e.target.value)}
+    required
+  /><br /><br />
 
-      <button type="button" onClick={handlePassword}>Enviar por correo</button>
-    </div>
-  );
+  <button type="button" onClick={handlePassword}>Enviar por correo</button>
+</div>
+);
 };
 
 export default Password;

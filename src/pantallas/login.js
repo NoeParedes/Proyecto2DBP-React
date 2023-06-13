@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import '../estilos/login.css';
 
 const Login = () => {
   const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
+  
 
   const handleLogin = () => {
     if (correo === '' || password === '') {
@@ -19,16 +21,15 @@ const Login = () => {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        'Content-Type': 'application/json'
-      }
+        'Content-Type': 'application/json',
+      },
     })
       .then(response => response.text())
       .then(text => {
-        if (text === "SUCCESS"){
-            window.location.href = '/libros';
-        }
-        else{
-            alert("Email o contraseña incorrecta.");
+        if (text === 'SUCCESS') {
+          window.location.href = '/libros';
+        } else {
+          alert('Email o contraseña incorrecta.');
         }
       })
       .catch(error => {
@@ -37,33 +38,42 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <h1>Login</h1>
+    <div className="login-form">
+      <h2>Login</h2>
       <form>
-        <label htmlFor="correo">Correo:</label>
+        <label htmlFor="correo"></label>
         <input
           type="email"
+          placeholder="Username or Email"
           id="correo"
           name="correo"
           value={correo}
-          onChange={(e) => setCorreo(e.target.value)}
+          onChange={e => setCorreo(e.target.value)}
           required
-        /><br /><br />
+        />
+        <br />
+        
 
-        <label htmlFor="password">Contraseña:</label>
+        <label htmlFor="password"></label>
         <input
           type="password"
           id="password"
           name="password"
           value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          placeholder='Password'
+          onChange={e => setPassword(e.target.value)}
           required
-        /><br /><br />
-
-        <button type="button" onClick={handleLogin}>Login</button>
-               
-        <p><a href="/recuperarpassword">¿Olvidaste tu contraseña?</a></p>
-
+        />
+        <br />
+        <p>
+          ¿No tienes cuenta? <a href="/signup">Regístrate</a>
+        </p>
+        <p>
+          <a href="/recuperarpassword">¿Olvidaste tu contraseña?</a>
+        </p>
+        <button type="button" onClick={handleLogin}>
+          Login
+        </button>
       </form>
     </div>
   );
