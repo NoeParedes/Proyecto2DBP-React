@@ -10,6 +10,11 @@ import Default from './pantallas/default';
 import Signup from './pantallas/signup';
 import Login from './pantallas/login';
 import Password from './pantallas/recuperarpassword';
+import Categoria from './pantallas/categorias';
+import Matematicas from './pantallas/matematicas';
+import Programacion from './pantallas/programacion';
+import Comunicacion from './pantallas/comunicacion';
+
 
 function App() {
   return (
@@ -22,7 +27,10 @@ function App() {
         <Route path="/contactos" element={<Contacto />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/recuperarpassword" element={<Password />} />
+        <Route path="/categorias" element={<Categoria />} />
+        <Route path="/matematicas" element={<Matematicas />} />
+        <Route path="/programacion" element={<Programacion />} />
+        <Route path="/comunicacion" element={<Comunicacion />} />
         <Route path="*" element={<Default />} />
       </Routes>
     </div>

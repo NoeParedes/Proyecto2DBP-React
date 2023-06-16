@@ -27,7 +27,7 @@ const Login = () => {
       .then(response => response.text())
       .then(text => {
         if (text === 'SUCCESS') {
-          window.location.href = '/libros';
+          window.location.href = '/categorias';
         } else {
           alert('Email o contraseña incorrecta.');
         }

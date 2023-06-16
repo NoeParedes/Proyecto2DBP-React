@@ -34,12 +34,6 @@ function Inicio() {
         autor="Autor del libro 1"
         texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       />
-      <Libro
-        imagen="dinosaurio"
-        nombre="Título del libro 2"
-        autor="Autor del libro 2"
-        texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-      />
     </div>
   );
 }

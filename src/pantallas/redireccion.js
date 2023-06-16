@@ -21,6 +21,7 @@ const Redireccion = () => {
           <li>
             <Link to="/signup">Signup</Link>
           </li>
+         
         </ul>
       </nav>
       <hr />
