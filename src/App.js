@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import { Routes, Route } from 'react-router-dom';
 import Inicio from './pantallas/inicio';
 import Libros from './pantallas/libros';
 import Contacto from './pantallas/contactos';
@@ -9,7 +8,6 @@ import Redireccion from './pantallas/redireccion';
 import Default from './pantallas/default';
 import Signup from './pantallas/signup';
 import Login from './pantallas/login';
-import Password from './pantallas/recuperarpassword';
 import Categoria from './pantallas/categorias';
 import Matematicas from './pantallas/matematicas';
 import Programacion from './pantallas/programacion';

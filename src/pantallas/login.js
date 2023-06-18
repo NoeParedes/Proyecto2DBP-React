@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import '../estilos/login.css';
 
+
+
+
 const Login = () => {
   const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
-  
-
+  const [id_usuario, setId_usuario] = useState('');  
   const handleLogin = () => {
     if (correo === '' || password === '') {
       alert('Por favor ingrese su correo y contraseña.');
+      return;
+    }
+    if (id_usuario === 0){
+      alert('ERROR');
       return;
     }
 
@@ -24,9 +30,12 @@ const Login = () => {
         'Content-Type': 'application/json',
       },
     })
-      .then(response => response.text())
-      .then(text => {
-        if (text === 'SUCCESS') {
+      .then(response => response.json())
+      .then(data => {
+        if (data.id_usuario) {
+          const UsuarioRecibido = data.id_usuario;
+          setId_usuario(UsuarioRecibido);
+          localStorage.setItem('id_usuario',UsuarioRecibido);
           window.location.href = '/categorias';
         } else {
           alert('Email o contraseña incorrecta.');

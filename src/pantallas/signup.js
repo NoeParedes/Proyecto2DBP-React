@@ -27,7 +27,7 @@ const Signup = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
     })
-      .then(response => response.text())
+      .then(response => response.text())  
       .then(text => {
         if (text === 'SUCCESS') {
           window.location.href = '/login';
