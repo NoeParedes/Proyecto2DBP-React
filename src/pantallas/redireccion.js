@@ -10,6 +10,9 @@ const Redireccion = () => {
             <Link to="/inicio">Inicio</Link>
           </li>
           <li>
+            <Link to="/categorias"> Categorías </Link>
+          </li>
+          <li>
             <Link to="/libros">Libros</Link>
           </li>
           <li>
