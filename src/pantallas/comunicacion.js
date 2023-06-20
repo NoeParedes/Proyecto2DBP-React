@@ -9,7 +9,7 @@ const Matematicas = () => {
   }, []);
 
   const obtenerLibros = () => {
-    fetch('http://127.0.0.1:5000/books/3', {
+    fetch('http://127.0.0.1:5000/books/categorias/3', {
       method: 'GET'
     })
       .then(response => response.json())

@@ -17,8 +17,8 @@ import Comunicacion from './pantallas/comunicacion';
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Redireccion />} />
+        <Redireccion />
+      <Routes>     
         <Route path="/libros" element={<Libros />} />
         <Route path="/" element={<Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
