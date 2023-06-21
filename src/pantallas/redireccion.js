@@ -6,25 +6,11 @@ const Redireccion = () => {
     <div>
       <nav>
         <ul>
-          <li>
-            <Link to="/inicio">Inicio</Link>
-          </li>
-          <li>
-            <Link to="/categorias"> Categorías </Link>
-          </li>
-          <li>
-            <Link to="/libros">Libros</Link>
-          </li>
-          <li>
-            <Link to="/contactos">Contactos</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/signup">Signup</Link>
-          </li>
-         
+          <li> <Link to="/inicio">Inicio</Link> </li>
+          <li> <Link to="/categorias"> Categorías </Link> </li>
+          <li> <Link to="/contactos"> Contactos </Link> </li>
+          <li> <Link to="/login"> Login </Link> </li>
+          <li> <Link to="/signup"> Signup </Link> </li>
         </ul>
       </nav>
       <hr />

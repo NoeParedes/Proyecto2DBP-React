@@ -15,7 +15,7 @@ function Categorias() {
             texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/matematicas'; }}>Matematicas</button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/1'; }}> Matematicas </button>
           </div>
         </div>
 
@@ -27,7 +27,7 @@ function Categorias() {
             texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/programacion'; }}>Programacion</button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/2'; }}> Programacion </button>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ function Categorias() {
             texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/comunicacion'; }}>Comunicacion</button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/3'; }}> Comunicacion </button>
           </div>
         </div>
       </div>
