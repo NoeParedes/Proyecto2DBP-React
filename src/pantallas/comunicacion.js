@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import Libro from '../componentes/libro';
 
-const Matematicas = () => {
+const Comunicacion = () => {
   const [libros, setLibros] = useState([]);
+  
 
   useEffect(() => {
     obtenerLibros();
@@ -38,9 +39,12 @@ const Matematicas = () => {
 
           />
         ))}
+         <div className="overlay">
+            <button className="boton" onClick={() => { window.location.href = '/vender'; }}>Comunicacion</button>
+          </div>
       </div>
     </div>
   );
 }
 
-export default Matematicas;
+export default Comunicacion;

@@ -1,0 +1,51 @@
+.vender-form {
+  max-width: 500px;
+  width: 400px;
+  margin:  auto;
+  border: 2px solid orange;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+form h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-align: left;
+}
+
+form input,
+form textarea {
+    width: 89%;
+    padding: 10px;
+    border: none;
+    background-color: #222;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form p {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+}
+
+form p a {
+    color: orange;
+    text-decoration: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: orange;
+    color:black
+}

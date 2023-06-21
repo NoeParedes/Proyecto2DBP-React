@@ -38,6 +38,9 @@ const Matematicas = () => {
             precio={"S/." +book.precio}
           />
         ))}
+        <div className="overlay">
+            <button className="boton" onClick={() => { window.location.href = '/vender'; }}>Comunicacion</button>
+          </div>
       </div>
     </div>
   );
