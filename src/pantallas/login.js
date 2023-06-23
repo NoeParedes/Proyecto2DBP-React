@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import '../estilos/login.css';
 
-
-
-
 const Login = () => {
   const [correo, setCorreo] = useState('');
   const [password, setPassword] = useState('');
   const [id_usuario, setId_usuario] = useState('');  
+  
   const handleLogin = () => {
     if (correo === '' || password === '') {
       alert('Por favor ingrese su correo y contraseña.');
@@ -26,9 +24,7 @@ const Login = () => {
     fetch('http://127.0.0.1:5000/login', {
       method: 'POST',
       body: JSON.stringify(data),
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json', },
     })
       .then(response => response.json())
       .then(data => {
@@ -60,10 +56,10 @@ const Login = () => {
           onChange={e => setCorreo(e.target.value)}
           required
         />
-        <br />
-        
 
-        <label htmlFor="password"></label>
+        <br/>        
+
+        <label htmlFor="password"> </label>
         <input
           type="password"
           id="password"
@@ -73,17 +69,14 @@ const Login = () => {
           onChange={e => setPassword(e.target.value)}
           required
         />
+
         <br />
-        <p>
-          ¿No tienes cuenta? <a href="/signup">Regístrate</a>
-        </p>
-        <p>
-          <a href="/recuperarpassword">¿Olvidaste tu contraseña?</a>
-        </p>
-        <button type="button" onClick={handleLogin}>
-          Login
-        </button>
+        <p> ¿No tienes cuenta? <a href="/signup"> Regístrate </a> </p>
+        <p> <a href="/recuperarpassword"> ¿Olvidaste tu contraseña? </a> </p>
+        <div class="center"> <button type="button" onClick={handleLogin}> Login </button> </div>
       </form>
+      
+      
     </div>
   );
 };

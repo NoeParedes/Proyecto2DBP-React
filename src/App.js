@@ -1,6 +1,8 @@
 import React  from 'react';
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
+
+import './App.css';
+
 import Inicio from './pantallas/inicio';
 import Contacto from './pantallas/contactos';
 import Redireccion from './pantallas/redireccion';
@@ -8,8 +10,8 @@ import Default from './pantallas/default';
 import Signup from './pantallas/signup';
 import Login from './pantallas/login';
 import Categoria from './pantallas/categorias';
+import Comprar from './pantallas/comprar';
 import Vender from './pantallas/vender';
-
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/categorias" element={<Categoria />} />
         <Route path="/vender" element={<Vender />} />
+        <Route path="/comprar/:idLibro" element={<Comprar />}/>
         <Route path="*" element={<Default />} />
       </Routes>
     </div>

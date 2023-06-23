@@ -25,15 +25,12 @@ function Inicio() {
     obtenerLibros(); 
   }, [route]);
 
-  
-
   /* localStorage.setItem('id_categoria',1); */
 
   return (
     <div>
-      
       <h2>Página de Inicio</h2>
-      
+
       {libros.map(book => (
         <Libro
           key     = {book.id}
@@ -45,11 +42,6 @@ function Inicio() {
           id      = {book.id}
         />
       ))}
-
-      <div className="overlay">
-        <button className="boton" onClick={() => { window.location.href = '/vender'; }}>Comunicacion</button>
-      </div>
-
     </div>
   );
 }

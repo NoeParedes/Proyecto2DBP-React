@@ -54,4 +54,9 @@
     color: black;
     cursor: pointer;
   }
+
+  .login-form .center {
+    display: grid;
+    place-items: center;
+  }
   

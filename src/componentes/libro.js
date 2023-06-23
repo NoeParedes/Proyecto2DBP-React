@@ -2,8 +2,8 @@ import React from 'react';
 import '../estilos/libro.css'
 
 function Libro(props) {
-/* Un componente funcional de react retorna un elemento jsx (combinacion de html y javaScript)*/
-  return ( /*estructura de nuestro componente */
+
+  return (
     <div className='contenedor-libro'>
       <img
       className='imagen-libro'
@@ -15,9 +15,9 @@ function Libro(props) {
         <p className='autor-libro'>  <strong> {props.autor}  </strong> </p>
         <p className='texto-libro'> "{props.texto}" </p>
         <p className='precio-libro'> <strong> {props.precio} </strong> </p>
-        <p className='id-libro'>     <strong> {props.id}     </strong> </p>
       </div>
 
+      <button onClick={() => { window.location.href = `/comprar/${props.id}` }}> Comprar </button>
     </div>
   );
 }
