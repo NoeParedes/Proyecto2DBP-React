@@ -5,20 +5,22 @@ import './App.css';
 
 import Inicio from './pantallas/inicio';
 import Contacto from './pantallas/contactos';
-import Redireccion from './pantallas/redireccion';
 import Default from './pantallas/default';
 import Signup from './pantallas/signup';
 import Login from './pantallas/login';
 import Categoria from './pantallas/categorias';
 import Comprar from './pantallas/comprar';
 import Vender from './pantallas/vender';
+import Header from './componentes/header';
+import MyBooks from './pantallas/mybooks';
+import UpdateBook from './pantallas/updatebook';
 
 function App() {
   return (
     <div>
-      <Redireccion />
+      <Header/>
       <Routes>     
-        <Route path="/" element={<Inicio />} />
+        <Route path="/" element={ <Inicio />} />
         <Route path="/inicio" element={<Inicio />} />
         <Route path="/inicio/:id_category" element={<Inicio />} />
         <Route path="/contactos" element={<Contacto />} />
@@ -27,6 +29,8 @@ function App() {
         <Route path="/categorias" element={<Categoria />} />
         <Route path="/vender" element={<Vender />} />
         <Route path="/comprar/:idLibro" element={<Comprar />}/>
+        <Route path="/mybooks" element={<MyBooks />}/>
+        <Route path="/updatebook" element={<UpdateBook />}/>
         <Route path="*" element={<Default />} />
       </Routes>
     </div>

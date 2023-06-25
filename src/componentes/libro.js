@@ -1,5 +1,7 @@
 import React from 'react';
 import '../estilos/libro.css'
+import BuyButton from './buybutton';
+import UpdateBookButton from './updatebookbutton';
 
 function Libro(props) {
 
@@ -17,7 +19,12 @@ function Libro(props) {
         <p className='precio-libro'> <strong> {props.precio} </strong> </p>
       </div>
 
-      <button onClick={() => { window.location.href = `/comprar/${props.id}` }}> Comprar </button>
+      { (props.button === 'shop') ? (
+          <BuyButton bookId={props.id} />
+        ) : (
+          <UpdateBookButton bookId={props.id} />
+      )}
+      
     </div>
   );
 }

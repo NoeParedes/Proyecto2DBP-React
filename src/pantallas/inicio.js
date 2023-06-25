@@ -4,17 +4,13 @@ import Libro from '../componentes/libro';
 
 function Inicio() {
   const { id_category } = useParams();
-  var route = 'http://127.0.0.1:5000/books';
 
+  var route = 'http://127.0.0.1:5000/books';
   if (typeof id_category !== 'undefined') {
     route = route + '/categorias/' + id_category;
-    console.log("Variable de valor: " + id_category);
-  } else {
-    console.log("Variable sin valor");
   }
 
   const [libros, setLibros] = useState([]);
-
   useEffect(() => {
     const obtenerLibros = async () => {
       fetch(route, { method: 'GET' })
@@ -25,11 +21,9 @@ function Inicio() {
     obtenerLibros(); 
   }, [route]);
 
-  /* localStorage.setItem('id_categoria',1); */
-
   return (
     <div>
-      <h2>Página de Inicio</h2>
+      <h2> Página de Inicio </h2>
 
       {libros.map(book => (
         <Libro
@@ -40,6 +34,7 @@ function Inicio() {
           texto   = {book.descripcion}
           precio  = {"S/." +book.precio}
           id      = {book.id}
+          button  = "shop"
         />
       ))}
     </div>

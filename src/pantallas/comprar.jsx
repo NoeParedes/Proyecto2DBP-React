@@ -5,25 +5,8 @@ import '../estilos/comprar.css';
 
 function Comprar() {
   const { idLibro } = useParams();
-  /*
-  if(typeof idLibro === 'undefined') {
-    return (
-        <div>
-            <p> Libro no seleccionado: Por favor, elija un libro antes de comprar </p>
-        </div>);
-  }
-  */
 
   const idUsuario = localStorage.getItem('id_usuario');
-
-  /*
-  if(typeof idUsuario === 'undefined') {
-    return (
-        <div>
-            <p> Debe iniciar sesión antes de realizar alguna compra </p>
-        </div>);
-  }
-  */
 
   const [userData, setUserData] = useState(null);
   const [bookData, setBookData] = useState(null);
@@ -76,7 +59,7 @@ function Comprar() {
             <h3> DATOS DEL LIBRO </h3>
             <p> Titulo: {bookData.titulo} </p>
             <p> Autor: {bookData.autor} </p>
-            <p> EPrecio: {bookData.precio} </p>
+            <p> Precio: {bookData.precio} </p>
             </div>
         )}
 

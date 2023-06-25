@@ -31,6 +31,7 @@ const Login = () => {
         if (data.id_usuario) {
           const UsuarioRecibido = data.id_usuario;
           setId_usuario(UsuarioRecibido);
+          localStorage.setItem('isLoggedIn','true');
           localStorage.setItem('id_usuario',UsuarioRecibido);
           window.location.href = '/categorias';
         } else {

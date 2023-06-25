@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../estilos/recuperarpassword.css"
+
 const Password = () => {
   const [correo, setCorreo] = useState('');
 
