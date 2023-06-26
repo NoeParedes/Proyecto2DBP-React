@@ -1,0 +1,30 @@
+.update-book-form {
+  max-width: 550px;
+  width: 800;
+  margin:  auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.update-book-form .title, .update-book-form .information {
+    background-color: black;
+    border: 2px solid orange;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.update-book-form .title h2 {
+    color: orange;
+    text-align: center;
+}
+
+.update-book-form .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    border: 2px solid black;
+    width: 30%;
+}

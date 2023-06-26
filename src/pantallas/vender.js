@@ -38,9 +38,7 @@ const Vender = () => {
   
     fetch('http://127.0.0.1:5000/books', {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
+      headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(libro)
     })
       .then(response => response.json())
@@ -63,6 +61,7 @@ const Vender = () => {
   return (
     <div id="books" className="vender-books">
       <h2>Vender</h2>
+      
       <div id="books">
         {libros.map(book => (
           <div key={book.id}>
@@ -73,56 +72,32 @@ const Vender = () => {
           </div>
         ))}
       </div>
-      <form className="vender-form"
-       onSubmit={handleSubmit}>
+      
+      <form className="vender-form" onSubmit={handleSubmit}>
         <br />
-        <label>
-          Autor:
-          <input
-            type="text"
-            name="autor"
-            value={nuevoLibro.autor}
-            onChange={handleChange}
-          />
+        <label> Autor:
+          <input type="text" name="autor" value={nuevoLibro.autor} onChange={handleChange}/>
         </label>
+        
         <br />
-        <label>
-          Descripción:
-          <textarea
-            name="descripcion"
-            value={nuevoLibro.descripcion}
-            onChange={handleChange}
-          />
+        <label> Descripción:
+          <textarea name="descripcion" value={nuevoLibro.descripcion} onChange={handleChange} />
         </label>
+        
         <br />
-        <label>
-          Precio:
-          <input
-            type="number"
-            name="precio"
-            value={nuevoLibro.precio}
-            onChange={handleChange}
-          />
+        <label> Precio:
+          <input type="number" name="precio" value={nuevoLibro.precio} onChange={handleChange}/>
         </label>
-        <br />
-        <label>
-          Título:
-          <input
-            type="text"
-            name="titulo"
-            value={nuevoLibro.titulo}
-            onChange={handleChange}
-          />
+        
+        <br/>
+        <label> Título:
+          <input type="text" name="titulo" value={nuevoLibro.titulo} onChange={handleChange}/>
         </label>
-        <label>
-          Archivo PDF:
-          <input
-            type="file"
-            accept=".pdf"
-            name="archivo_pdf"
-            onChange={handleChange}
-          />
+        
+        <label> Archivo PDF:
+          <input type="file" accept=".pdf" name="archivo_pdf" onChange={handleChange}/>
         </label>
+
         <br />
         <button type="submit">Subir libro</button>
       </form>
