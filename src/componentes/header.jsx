@@ -4,7 +4,13 @@ import '../estilos/header.css';
 import AccountTab from './accounttab';
 
 const Header = () => {
+  if (localStorage.getItem('isLoggedIn' === null)) {
+    localStorage.setItem('isLoggedIn','false');
+  }
   const isLoggedIn = localStorage.getItem('isLoggedIn');
+  if (localStorage.getItem('id_usuario' === null)) {
+    localStorage.setItem('id_usuario','0');
+  }
   const userId = localStorage.getItem('id_usuario');
 
   return (
