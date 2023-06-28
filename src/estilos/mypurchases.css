@@ -1,0 +1,11 @@
+.purchase-items {
+    display: grid;
+    place-items: center;
+}
+
+.item {
+    background-color: black;
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+}

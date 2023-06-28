@@ -36,8 +36,8 @@ const AccountTab = (props) => {
       window.location.href = `/mybooks`;
     };
 
-    const myshoppings = () => {
-      window.location.href = `/mybooks`
+    const mypurchases = () => {
+      window.location.href = `/mypurchases`
     };
 
     return (
@@ -54,7 +54,7 @@ const AccountTab = (props) => {
               {/* Opciones de la cuenta */}
               <div className="center">
                 <button onClick={mybooks}> Mis Libros    </button>
-                <button onClick={myshoppings}> Mis Compras   </button>
+                <button onClick={mypurchases}> Mis Compras   </button>
                 <button onClick={logout}> Cerrar Sesión </button>
               </div>  
             </div>

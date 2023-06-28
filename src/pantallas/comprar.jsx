@@ -5,7 +5,6 @@ import '../estilos/comprar.css';
 
 function Comprar() {
   const { idLibro } = useParams();
-
   const idUsuario = localStorage.getItem('id_usuario');
 
   const [userData, setUserData] = useState(null);
@@ -40,6 +39,24 @@ function Comprar() {
     fetchBookData();
   }, [idUsuario, idLibro]);
 
+  const registrarCompra = () => {
+    const data = {
+      user_id : userData.id,
+      autor   : bookData.titulo,
+      title   : bookData.autor,
+      price   : bookData.precio
+    };
+
+    fetch('http://127.0.0.1:5000/compras', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+    .then(response => response.text())
+    .then(text => { if (text === 'SUCCESS') { window.location.href = '/inicio'; } })
+    .catch(error => { console.error(error); });
+  };
+
   return (
     <div className="shopping-box">
         <div className="box">
@@ -64,8 +81,8 @@ function Comprar() {
         )}
 
         <div className="button-box">
-            <button onClick={() => { window.location.href = `/inicio` }}> CONFIRMAR </button>
-            <button onClick={() => { window.location.href = `/inicio` }}> CANCELAR </button>
+          <button onClick={ registrarCompra }> CONFIRMAR </button>
+          <button onClick={() => { window.location.href = `/inicio` }}> CANCELAR </button>
         </div>        
     </div>
   );
