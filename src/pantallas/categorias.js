@@ -5,41 +5,41 @@ import Categoria from '../componentes/categoria';
 function Categorias() {
   return (
     <div>
-      <h2>Categorias de libros</h2>
+      <h2>Categorías de libros</h2>
       <div className="container">
-        {/* Tarjeta de Matematicas */}
+        {/* Tarjeta de Matemáticas */}
         <div className="card">
           <Categoria
-            imagen="dinosaurio"
-            nombre="Título del Categoria 1"
-            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            imagen="mats.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
+            texto="GA"
+            nombre="Libros de matemáticas."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/inicio/1'; }}> Matematicas </button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/1'; }}> Matemáticas </button>
           </div>
         </div>
 
-        {/* Tarjeta de Programacion */}
+        {/* Tarjeta de Programación */}
         <div className="card">
           <Categoria
-            imagen="dinosaurio"
-            nombre="Título del Categoria 2"
-            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            imagen="pro.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
+            texto="GA"
+            nombre="Libros de programación."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/inicio/2'; }}> Programacion </button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/2'; }}> Programación </button>
           </div>
         </div>
 
-        {/* Tarjeta de Comunicacion */}
+        {/* Tarjeta de Comunicación */}
         <div className="card">
           <Categoria
-            imagen="dinosaurio"
-            nombre="Título del Categoria 3"
-            texto="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            imagen="co.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
+            texto="GA"
+            nombre="Libros de comunicación."
           />
           <div className="overlay">
-            <button className="boton" onClick={() => { window.location.href = '/inicio/3'; }}> Comunicacion </button>
+            <button className="boton" onClick={() => { window.location.href = '/inicio/3'; }}> Comunicación </button>
           </div>
         </div>
       </div>

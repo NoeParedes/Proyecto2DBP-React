@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import '../estilos/vender.css';
 
 const Vender = () => {
-  const [libros, setLibros] = useState([]);
+  const [libros,] = useState([]);
   const [nuevoLibro, setNuevoLibro] = useState({
     archivo_pdf: '',
     autor: '',
@@ -74,24 +74,21 @@ const Vender = () => {
       </div>
       
       <form className="vender-form" onSubmit={handleSubmit}>
-        <br />
-        <label> Autor:
-          <input type="text" name="autor" value={nuevoLibro.autor} onChange={handleChange}/>
+  
+        <label> Titulo:
+          <input type="text" name="titulo" value={nuevoLibro.titulo} onChange={handleChange}/>
+
         </label>
         
         <br />
         <label> Descripción:
-          <textarea name="descripcion" value={nuevoLibro.descripcion} onChange={handleChange} />
-        </label>
-        
-        <br />
-        <label> Precio:
-          <input type="number" name="precio" value={nuevoLibro.precio} onChange={handleChange}/>
+        <textarea name="descripcion" value={nuevoLibro.descripcion} onChange={handleChange} />
         </label>
         
         <br/>
-        <label> Título:
-          <input type="text" name="titulo" value={nuevoLibro.titulo} onChange={handleChange}/>
+        <label> Precio:
+        <input type="number" name="precio" value={nuevoLibro.precio} onChange={handleChange}/>
+
         </label>
         
         <label> Archivo PDF:

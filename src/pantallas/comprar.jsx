@@ -60,20 +60,20 @@ function Comprar() {
   return (
     <div className="shopping-box">
         <div className="box">
-            <h2> INFORMACION DE COMPRA </h2>
+            <h2> Informacion de la compra </h2>
         </div>
 
         {userData && (
-            <div className="box">
-            <h3> DATOS DEL COMPRADOR </h3>
+            <div className="box-d">
+            <h3> Datos del comprador </h3>
             <p> Nombre: {userData.nombre} {userData.apellido}</p>
             <p> Email: {userData.correo} </p>
             </div>
         )}
 
         {bookData && (
-            <div className="box">
-            <h3> DATOS DEL LIBRO </h3>
+            <div className="box-l">
+            <h3> Datos del libro </h3>
             <p> Titulo: {bookData.titulo} </p>
             <p> Autor: {bookData.autor} </p>
             <p> Precio: {bookData.precio} </p>

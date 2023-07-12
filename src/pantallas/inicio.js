@@ -4,13 +4,15 @@ import Libro from '../componentes/libro';
 
 function Inicio() {
   const { id_category } = useParams();
+  const [libros, setLibros] = useState([]);
 
   var route = 'http://127.0.0.1:5000/books';
+  localStorage.setItem('id_categoria', id_category);
+
   if (typeof id_category !== 'undefined') {
     route = route + '/categorias/' + id_category;
   }
 
-  const [libros, setLibros] = useState([]);
   useEffect(() => {
     const obtenerLibros = async () => {
       fetch(route, { method: 'GET' })
@@ -23,7 +25,11 @@ function Inicio() {
 
   return (
     <div>
-      <h2> Página de Inicio </h2>
+      {id_category > 0 && (
+        <div>
+          <button onClick={() => { window.location.href = `/vender` }}>Vender nuevo Libro</button>
+        </div>
+      )}
 
       {libros.map(book => (
         <Libro

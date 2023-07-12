@@ -1,10 +1,7 @@
 /* Estilos de la barra negra superior */
 nav {
-    background-color: #1c0135;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: #590da0;
+    padding: 10px 0;
   }
   
   /* Estilos de los botones */
@@ -28,6 +25,6 @@ nav {
   }
   
   nav ul li a:hover {
-    background-color: #34085e;
+    background-color: #ff9000;
   }
   

@@ -86,10 +86,9 @@ body {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 20px; /* Botón más redondeado */
-    background-color: #FDB813;
-    transition: background-color 0.3s ease-in-out;
+    background-color: #5503b3;
   }
   
   .card .overlay button:hover {
-    background-color: #FFC107;
+    background-color: #3e215b;
   }

@@ -16,6 +16,7 @@ import Vender from './pantallas/vender';
 import MyBooks from './pantallas/mybooks';
 import UpdateBook from './pantallas/updatebook';
 import MyPurchases from './pantallas/mypurchases';
+import Password from './pantallas/recuperarpassword';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/vender"              element={<Vender      />} />
         <Route path="/comprar/:idLibro"    element={<Comprar     />} />
         <Route path="/mybooks"             element={<MyBooks     />} />
+        <Route path="/recuperarpassword"             element={<Password     />} />
         <Route path="/updatebook"          element={<UpdateBook  />} />
         <Route path="/mypurchases"         element={<MyPurchases />} />
         <Route path="*"                    element={<Default     />} />

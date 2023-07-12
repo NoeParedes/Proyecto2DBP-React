@@ -1,9 +1,10 @@
+
 .login-form {
-    max-width: 500px;
+    max-width: 550px;
     width: 300px;
     margin: 0 auto;
-    border: 2px solid orange;
-    background-color: black;
+    border-radius: 5px;
+    background: #5503b3;
     padding: 20px;
     text-align: center;
     position: absolute;
@@ -13,9 +14,9 @@
   }
   
   .login-form h2 {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
-    color: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
   }
   
   .login-form label {
@@ -30,7 +31,7 @@
     width: 95%;
     padding: 10px;
     border: none;
-    background-color: #222;
+    background-color: #3e215b;
     color: white;
     margin-bottom: 10px;
   }
@@ -42,7 +43,7 @@
   }
   
   .login-form p a {
-    color: orange;
+    color: #000000;
     text-decoration: none;
   }
   
@@ -50,9 +51,10 @@
     width: 100%;
     padding: 10px;
     border: none;
-    background-color: orange;
+    background-color: #3e0c6d;
     color: black;
     cursor: pointer;
+    font-size: 20px;
   }
 
   .login-form .center {

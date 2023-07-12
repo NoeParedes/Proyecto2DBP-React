@@ -44,6 +44,7 @@ const Login = () => {
   };
 
   return (
+    <body>
     <div className="login-form">
       <h2>Login</h2>
       <form>
@@ -79,6 +80,7 @@ const Login = () => {
       
       
     </div>
+    </body>
   );
 };
 

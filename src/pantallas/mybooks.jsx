@@ -19,7 +19,6 @@ const MyBooks = () => {
     <div>
         <div>
             <h2> Mis Libros </h2>
-            <button onClick={() => { window.location.href = `/vender` }}> Vender nuevo Libro </button>
         </div>        
 
         {Libros.map(book => (
