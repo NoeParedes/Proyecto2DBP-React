@@ -7,25 +7,14 @@ const MyBooks = () => {
   const [Libros, setLibros] = useState([]);
   useEffect(() => {
     const obtenerLibros = async () => {
-      fetch(`http://44.213.189.154:8002/books/usuario/${userId}`, { method: 'GET' })
+      fetch(`http://127.0.0.1:5000/books/usuario/${userId}`, { method: 'GET' })
         .then(response => response.json())
         .then(response => { setLibros(response); })
         .catch(error => { console.log(error); });
     };
     obtenerLibros(); 
   }, [userId]);
-  const obtenerRutaImagen = (idCategoria) => {
-    switch (idCategoria) {
-      case 1:
-        return 'categoria1';
-      case 2:
-        return 'categoria2';
-      case 3:
-        return 'categoria3';
-      default:
-        return 'dinosaurio'
-    }
-  };
+
     return (
     <div>
         <div>
@@ -35,7 +24,7 @@ const MyBooks = () => {
         {Libros.map(book => (
         <Libro
             key     = {book.id}
-            imagen  = {obtenerRutaImagen(book.id)}
+            imagen  = "dinosaurio"
             nombre  = {book.titulo}
             autor   = {book.autor}
             texto   = {book.descripcion}

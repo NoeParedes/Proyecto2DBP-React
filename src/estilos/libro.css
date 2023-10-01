@@ -1,11 +1,11 @@
 .contenedor-libro {
   display: inline-block;
   width: calc(20% - 20px);
-  background-color: #eac7f6;
-  padding: 10px;
+  background: linear-gradient(to bottom, #7193e1, #6cb7c1); /* Degradado azul y celeste */
+  padding: 20px; 
   margin: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
   transition: transform 0.3s;
   vertical-align: top;
   box-sizing: border-box;
@@ -15,14 +15,15 @@
   transform: translateY(-5px);
 }
 
-div h2{
-  color:black;
+div h2 {
+  color: black;
 }
+
 .imagen-libro {
   width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 10px; 
   margin-bottom: 10px;
 }
 
@@ -31,31 +32,31 @@ div h2{
 }
 
 .nombre-libro {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 5px;
-  color: #333;
+  color: #000000;
 }
 
 .autor-libro {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 5px;
-  color: gray;
+  color: rgb(78, 78, 78);
 }
 
 .texto-libro {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
-  color:black;
+  color: black;
 }
 
 .precio-libro {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
-  color:black;
+  color: black;
 }
 
 .id-libro {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
-  color:black;
+  color: black;
 }

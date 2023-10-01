@@ -1,47 +1,70 @@
 .update-book-form {
     max-width: 550px;
-    width: 800px; /* Añade 'px' después del valor numérico */
+    width: 800px; 
     margin: auto;
     padding: 10px;
     text-align: center;
-  }
-  
-  .update-book-form .title {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-  .update-book-form {
+}
+
+.update-book-form .title {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.update-book-form {
     max-width: 550px;
     width: 480px;
-    
     margin: 0 auto;
-    border-radius: 5px;
-    background: #3f0681;
+    border-radius: 10px; 
+    background: linear-gradient(to bottom, #4b6cb7, #6cb7c1); 
     padding: 20px;
     text-align: center;
-
-  }
-  .update-book-form .title h2 {
-      color: #000000; 
-      text-align: center;
-  }
-  
-  .update-book-form .buttons {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-  }
-  
-  .buttons button {
-      border: 2px solid #782dbe;
-      width: 30%;
-  }
-  
-.information input{
-    background-color: #36234c;
-    width: 94%;
 }
-.information textarea{
-    background-color: #36234c;
+
+.update-book-form .title h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px;
+}
+
+.update-book-form .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.update-book-form .buttons button {
+    border: 2px solid #782dbe;
+    width: 30%;
+    background: linear-gradient(to bottom, #2c4d7d, #3a70a6);
+    color: rgb(255, 255, 255); 
+    border-radius: 10px; 
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.update-book-form .buttons button:hover {
+    background: linear-gradient(to bottom, #26406b, #336699); 
+}
+
+.information input {
+    background-color: #ffffff;
     width: 94%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+
+.information textarea {
+    background-color: #ffffff;
+    width: 94%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px; 
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
 }

@@ -10,12 +10,14 @@
     flex: 1;
     max-width: 50%;
     margin-right: 20px;
+    padding: 20px; /* Añadí un espacio interior para mayor claridad */
   }
   
   .image-container {
     flex: 1;
     max-width: 50%;
     margin-left: 20px;
+    padding: 20px; /* Añadí un espacio interior para mayor claridad */
   }
   
   h2 {
@@ -26,7 +28,7 @@
   }
   
   p {
-    color: #ffffff;
+    color: #000000;
     font-size: 24px;
     line-height: 1.5;
     margin-bottom: 10px;
@@ -35,4 +37,3 @@
   iframe {
     margin-top: 20px;
   }
-  

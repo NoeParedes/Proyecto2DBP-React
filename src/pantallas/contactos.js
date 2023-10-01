@@ -6,8 +6,8 @@ function Contacto() {
     <div className="container">
       <div className="text-container">
         <h2>Página de Contacto</h2>
-        <p>Rebecca Helferich Clarke (Harrow, 27 de agosto de 1886 – Nueva York, 13 de octubre de 1979), también conocida por su pseudónimo Anthony Trent y por su</p>
-        <p>Si tienes alguna pregunta, sugerencia o comentario, no dudes en contactarnos a través de nuestro correo electrónico:</p>
+        <p>Estamos aquí para ayudarte y nos esforzamos por responder todas las consultas lo más rápido posible.</p>
+        <p>¿Tienes alguna pregunta, sugerencia o comentario? ¡Nos encantaría escucharlo! No dudes en ponerte en contacto con nosotros a través de nuestro correo electrónico:</p>
         <p>libros.cheveres@g.pe</p>
         <p>Estaremos encantados de atenderte.</p>
       </div>

@@ -1,33 +1,32 @@
 /* Estilos de la barra negra superior */
 nav {
-    background-color: #1c0135;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Estilos de los botones */
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    background-color: #590da0;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  nav ul li a:hover {
-    background-color: #34085e;
-  }
-  
+  background: linear-gradient(to bottom, #2f457a, #334d88); /* Degradado azul y celeste */
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Estilos de los botones */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  background: linear-gradient(to bottom, #3a70a6, #3a70a6); /* Degradado azul y celeste */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to bottom, #26406b, #336699); /* Degradado al pasar el cursor */
+}

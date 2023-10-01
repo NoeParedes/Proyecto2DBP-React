@@ -73,7 +73,8 @@ const Login = () => {
         />
 
         <br />
-        <p> ¿No tienes cuenta? <a href="/signup"> Regístrate </a> </p>
+        <p>¿No tienes cuenta? <a href="/signup"><u>Regístrate</u></a></p>
+
         <p> <a href="/recuperarpassword"> ¿Olvidaste tu contraseña? </a> </p>
         <div class="center"> <button type="button" onClick={handleLogin}> Login </button> </div>
       </form>

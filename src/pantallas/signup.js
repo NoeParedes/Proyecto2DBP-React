@@ -22,7 +22,7 @@ const Signup = () => {
       password: password,
     };
 
-    fetch('http://44.213.189.154:8001/users', {
+    fetch('http://127.0.0.1:5000/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -109,7 +109,8 @@ const Signup = () => {
         
       </form>
       <p>
-        Already have an account? <a className="login-link" href="/login">Log in</a>
+      ¿Ya tienes una cuenta? <b><u><a className="login-link" href="/login">Log in</a></u></b>
+
       </p>
       <button type='button' onClick={signup}>Sign Up</button>
     </div>

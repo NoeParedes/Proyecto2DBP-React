@@ -1,67 +1,95 @@
-.vender-form {
-  max-width: 500px;
-  width: 400px;
-  margin:  auto;
-  border-radius: 6px;
-  background-color: #5503b3;
-  padding: 10px;
-  text-align: center;
+/* Fuente principal para todo el formulario */
+body {
+    font-family: Copperplate, Cambria, "Courier New", monospace;
 }
 
+/* Estilo del contenedor principal */
+.vender-form {
+  max-width: 500px;
+  width: 90%;
+  margin:  auto;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #4b6cb7, #6cb7c1);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título h2 */
 form h2 {
     text-align: left;
     margin-bottom: 20px;
-    color: rgb(255, 0, 0);
+    color: #ff4d4d;
 }
 
+/* Estilo de las etiquetas de los campos */
 form label {
     display: block;
     margin-bottom: 10px;
-    color: white;
+    color: #fff;
     text-align: left;
 }
 
+/* Estilo de los campos de entrada y textarea */
 form input,
 form textarea {
-    width: 89%;
+    width: calc(100% - 20px);
     padding: 10px;
-    border: none;
-    background-color: #222;
-    color: white;
+    border: 2px solid #7d5dbd;
+    background-color: #fff;
+    color: #333;
     margin-bottom: 10px;
+    border-radius: 8px;
 }
 
+/* Estilo de los párrafos de texto */
 form p {
-    font-size: 15px;
-    color: white;
+    color: #333;
     text-align: left;
+    margin-bottom: 15px;
 }
 
+/* Estilo de los enlaces en los párrafos */
 form p a {
-    color: orange;
+    color: #ff6600;
     text-decoration: none;
+    font-weight: bold;
 }
 
+/* Estilo del botón */
 .vender-form button {
     width: 48%;
-    padding: 10px;
+    padding: 15px;
     border: none;
-    background-color: #3e0c6d;
-    color: black;
-    font-size: 20px;
+    background: linear-gradient(to bottom, #2c4d7d, #3a70a6);
+    color: #fff;
     margin-right: 2%; 
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.vender-form button:hover{
-    background-color: #360267;
+/* Estilo del botón al pasar el cursor */
+.vender-form button:hover {
+    background: linear-gradient(to bottom, #26406b, #336699);
 }
 
-
-.vender-form input{
-    background-color: #3e215b;
-    width: 95%;
+/* Estilo de los campos de entrada */
+.vender-form input {
+    width: calc(100% - 20px);
+    background-color: #f2f2f2;
+    border: 2px solid #579cd7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
-.vender-form textarea{
-    background-color: #3e215b;
-    width: 95%;
+
+/* Estilo de las áreas de texto */
+.vender-form textarea {
+    width: calc(100% - 20px);
+    background-color: #f2f2f2;
+    border: 2px solid #579cd7;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
 }

@@ -1,45 +1,53 @@
+
 .shopping-box {
     display: grid;
     place-items: center;
 }
 
+
 .button-box {
     margin-top: 30px;
 }
 
-.box-d{
+.box-d {
     width: 600px;
-    border-radius: 5px;
-    background-color: #590da0;
-    padding: 10px;
-    margin-top: 30px;
-}
-.box-l{
-    width: 600px;
-    border-radius: 5px;
-    background-color: #590da0;
-    padding: 10px;
+    border-radius: 10px; 
+    background: linear-gradient(to bottom, #4e74ce, #6cb7c1); 
+    padding: 20px; 
     margin-top: 30px;
 }
 
-h3{
+/* Estilos para el cuadro de lista */
+.box-l {
+    width: 600px;
+    border-radius: 10px; 
+    background: linear-gradient(to bottom, #4f78d7, #6cb7c1); 
+    padding: 20px; 
+    margin-top: 30px;
+}
+
+/* Estilos para encabezados */
+h2, h3 {
+    text-align: center;
+    color: black;
+}
+
+h3 {
     font-size: 22px;
 }
-h2,h3 {
-    text-align: center;
-    width:100%;
-    color: rgb(0, 0, 0);
-}
+
 
 button {
     color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    background-color: #590da0;
-    border-radius: 5px;
+    padding: 10px 20px; 
+    background: linear-gradient(to bottom, #3164b0, #3a70a6); 
+    border-radius: 10px;
     transition: 0.3s;
     cursor: pointer;
+    border: none; 
 }
-button:hover{
-    background-color: #34085e;
+
+button:hover {
+    background: linear-gradient(to bottom, #32558f, #336699); /* Degradado al pasar el cursor */
 }

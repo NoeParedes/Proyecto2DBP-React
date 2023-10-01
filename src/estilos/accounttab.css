@@ -1,26 +1,39 @@
- 
-  .account-tab {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    background-color: #b87af2;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 10px;
-    max-width: 300px;
-    z-index: 1;
-    margin-right: 20px;
-  }
+/* Estilos de la pestaña de cuenta */
+.account-tab {
+  position: absolute;
+  top: 100px;
+  right: 0;
+  background: linear-gradient(to bottom, #4caedf, #6cb7c1); /* Degradado azul y celeste */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; 
+  padding: 20px; 
+  max-width: 300px;
+  z-index: 1;
+  margin-right: 20px;
+}
 
 .account-tab button {
   width: 80%;
   margin-bottom: 10px;
+  background: linear-gradient(to bottom, #3868b1, #3a70a6); /* Degradado azul y celeste para el botón */
+  color: white; /* Color de texto blanco */
+  border: none;
+  border-radius: 8px; /* Redondeo de las esquinas del botón */
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.account-tab button:hover {
+  background: linear-gradient(to bottom, #315fa8, #2d5a87); /* Degradado al pasar el cursor sobre el botón */
 }
 
 .account-tab .center {
   text-align: center;
 }
-.account-tab p{
+
+.account-tab p {
   color: black;
+  font-size: 18px;
+  text-align: center;
 }
-  

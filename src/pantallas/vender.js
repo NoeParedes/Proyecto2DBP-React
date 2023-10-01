@@ -36,14 +36,14 @@ const Vender = () => {
       id_usuario: usuarioId
     };
   
-    fetch('http://44.213.189.154:8002/books', {
+    fetch('http://127.0.0.1:5000/books', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(libro)
     })
-      .then(response => response.text())
+      .then(response => response.json())
       .then(response => {
-        console.log('Libro subido con éxito:');
+        console.log('Libro subido con éxito:', response);
         setNuevoLibro({
           archivo_pdf: '',
           autor: '',
@@ -56,10 +56,7 @@ const Vender = () => {
         console.error('Error al subir el libro:', error);
       });
   };
-  const handleCancel = () => {
-    const idCategoria = obtenerIdCategoria();
-    window.location.href = `/inicio/${idCategoria}`;
-  };
+  
 
   return (
     <div id="books" className="vender-books">
@@ -100,7 +97,6 @@ const Vender = () => {
 
         <br />
         <button type="submit">Subir libro</button>
-        <button type="button" onClick={handleCancel}> Cancelar </button>
       </form>
     </div>
   );

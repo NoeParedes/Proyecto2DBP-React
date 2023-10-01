@@ -1,12 +1,12 @@
-  .message {
-    position: absolute;
-    top: 0px;
-    right: 0;
-    background-color: #590da0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    padding: 10px;
-    z-index: 1;
-    height: auto;
-    color: #fff;
-  }
+.message {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: linear-gradient(to bottom, #3d66a4, #3a70a6); /* Degradado azul y celeste */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Aumenté el redondeo de las esquinas */
+  padding: 20px; /* Aumenté el espacio interior */
+  z-index: 1;
+  height: auto;
+  color: white; /* Color de texto blanco para mayor contraste */
+}

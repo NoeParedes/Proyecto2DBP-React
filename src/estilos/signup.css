@@ -1,12 +1,16 @@
+/* Estilo general para el cuerpo de la página */
 body {
-  font-family: Arial, sans-serif;
-  background-color: black;
+  font-family: Copperplate, Arial, sans-serif;
+  background: url('../imagenes/keiko2.jpeg') no-repeat center center fixed; /* Cambiar la URL de la imagen de fondo */
+  background-size: cover;
   color: white;
   padding: 20px;
+  margin: 0; /* Eliminar el margen predeterminado */
 }
 
-.containerr h2{
-  color: black
+
+.containerr h2 {
+  color: black;
 }
 
 .containerr {
@@ -14,15 +18,14 @@ body {
   width: 380px;
   height: 380px;
   margin: 0 auto;
-  border-radius: 5px;
-  background-color: #51109b;
+  border-radius: 10px; 
+  background: linear-gradient(to bottom, #5880df, #6cb7c1); 
   padding: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 
 .row {
   display: flex;
@@ -44,9 +47,10 @@ input[type="password"] {
   width: 88%;
   padding: 10px;
   border: none;
-  background-color: #3e215b;
-  color: white;
+  background-color: #fff; 
+  color: #333; 
   margin-bottom: 10px;
+  border-radius: 8px; 
 }
 
 input[type="text"].username {
@@ -62,10 +66,11 @@ button[type="button"] {
   width: 99%;
   padding: 10px;
   border: none;
-  background-color: #3e0c6d;
-  color: black;
+  background: linear-gradient(to bottom, #3c6fba, #3a70a6); 
+  color: white;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 8px; 
 }
 
 .login-link {
@@ -73,6 +78,6 @@ button[type="button"] {
   text-decoration: none;
 }
 
-p{
+p {
   font-size: 15px;
 }

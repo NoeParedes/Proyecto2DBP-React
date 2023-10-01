@@ -10,7 +10,7 @@ const Comunicacion = () => {
   }, []);
 
   const obtenerLibros = () => {
-    fetch('http://44.213.189.154:8002/books/categorias/3', {
+    fetch('http://127.0.0.1:5000/books/categorias/3', {
       method: 'GET'
     })
       .then(response => response.json())

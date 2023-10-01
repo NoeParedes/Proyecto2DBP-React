@@ -10,7 +10,7 @@ const Password = () => {
       return;
     }
 
-    fetch(`http://44.213.189.154:8001/password/${correo}`, {
+    fetch(`http://127.0.0.1:5000/password/${correo}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
