@@ -11,7 +11,7 @@ function Categorias() {
         <div className="card">
           <Categoria
             imagen="mats.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
-            texto="GA"
+            texto='Los mejores libros de matemáticas.'
             nombre="Libros de matemáticas."
           />
           <div className="overlay">
@@ -23,7 +23,7 @@ function Categorias() {
         <div className="card">
           <Categoria
             imagen="pro.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
-            texto="GA"
+            texto='Los mejores libros de programación.'
             nombre="Libros de programación."
           />
           <div className="overlay">
@@ -35,7 +35,7 @@ function Categorias() {
         <div className="card">
           <Categoria
             imagen="co.jpeg" /* Cambia el nombre de la imagen según tu preferencia */
-            texto="GA"
+            texto='Los mejores libros de comunicación.'
             nombre="Libros de comunicación."
           />
           <div className="overlay">

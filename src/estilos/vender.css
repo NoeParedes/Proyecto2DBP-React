@@ -2,8 +2,8 @@
   max-width: 500px;
   width: 400px;
   margin:  auto;
-  border: 2px solid orange;
-  background-color: black;
+  border-radius: 6px;
+  background-color: #5503b3;
   padding: 10px;
   text-align: center;
 }
@@ -42,10 +42,26 @@ form p a {
     text-decoration: none;
 }
 
-form button {
-    width: 100%;
+.vender-form button {
+    width: 48%;
     padding: 10px;
     border: none;
-    background-color: orange;
-    color:black
+    background-color: #3e0c6d;
+    color: black;
+    font-size: 20px;
+    margin-right: 2%; 
+}
+
+.vender-form button:hover{
+    background-color: #360267;
+}
+
+
+.vender-form input{
+    background-color: #3e215b;
+    width: 95%;
+}
+.vender-form textarea{
+    background-color: #3e215b;
+    width: 95%;
 }

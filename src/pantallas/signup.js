@@ -22,7 +22,7 @@ const Signup = () => {
       password: password,
     };
 
-    fetch('http://127.0.0.1:5000/users', {
+    fetch('http://44.213.189.154:8001/users', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

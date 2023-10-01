@@ -6,7 +6,7 @@ function Inicio() {
   const { id_category } = useParams();
   const [libros, setLibros] = useState([]);
 
-  var route = 'http://127.0.0.1:5000/books';
+  var route = 'http://44.213.189.154:8002/books';
   localStorage.setItem('id_categoria', id_category);
 
   if (typeof id_category !== 'undefined') {
@@ -22,6 +22,18 @@ function Inicio() {
     };
     obtenerLibros(); 
   }, [route]);
+  const obtenerRutaImagen = (idCategoria) => {
+    switch (idCategoria) {
+      case 1:
+        return 'categoria1';
+      case 2:
+        return 'categoria2';
+      case 3:
+        return 'categoria3';
+      default:
+        return 'dinosaurio'
+    }
+  };
 
   return (
     <div>
@@ -34,7 +46,7 @@ function Inicio() {
       {libros.map(book => (
         <Libro
           key     = {book.id}
-          imagen  = "dinosaurio"
+          imagen  = {obtenerRutaImagen(book.id_category)}
           nombre  = {book.titulo}
           autor   = {book.autor}
           texto   = {book.descripcion}

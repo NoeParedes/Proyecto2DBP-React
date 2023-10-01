@@ -9,7 +9,7 @@ const Libros = () => {
   }, []);
 
   const obtenerLibros = () => {
-    fetch('http://127.0.0.1:5000/books', {
+    fetch('http://44.213.189.154:8002/books', {
       method: 'GET'
     })
       .then(response => response.json())
@@ -28,7 +28,7 @@ const Libros = () => {
         {libros.map(book => (
           <Libro
             key={book.id}
-            imagen="dinosaurio"
+            imagen="categoria3"
             nombre={book.titulo}
             autor={book.autor}
             texto={book.descripcion}

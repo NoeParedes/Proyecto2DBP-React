@@ -15,7 +15,7 @@ function Libro(props) {
       <div className ='contenedor-texto-libros'>
         <p className='nombre-libro'> <strong> {props.nombre} </strong> </p>
         <p className='autor-libro'>  <strong> {props.autor}  </strong> </p>
-        <p className='texto-libro'> "{props.texto}" </p>
+        <p className='texto-libro'>{props.texto} </p>
         <p className='precio-libro'> <strong> {props.precio} </strong> </p>
       </div>
 

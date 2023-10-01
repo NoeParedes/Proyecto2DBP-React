@@ -14,7 +14,7 @@ function Comprar() {
     const fetchUserData = async () => {
       try {
         if (idUsuario) {
-          const response = await fetch(`http://127.0.0.1:5000/users/${idUsuario}`);
+          const response = await fetch(`http://44.213.189.154:8001/users/${idUsuario}`);
           const data = await response.json();
           setUserData(data);
         }
@@ -26,7 +26,7 @@ function Comprar() {
     const fetchBookData = async () => {
         try {
           if (idLibro) {
-            const response = await fetch(`http://127.0.0.1:5000/books/${idLibro}`);
+            const response = await fetch(`http://44.213.189.154:8002/books/${idLibro}`);
             const data = await response.json();
             setBookData(data);
           }
@@ -47,7 +47,7 @@ function Comprar() {
       price   : bookData.precio
     };
 
-    fetch('http://127.0.0.1:5000/compras', {
+    fetch('http://44.213.189.154:8003/compras', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)

@@ -14,7 +14,7 @@ const AccountTab = (props) => {
         const fetchUserData = async () => {
           try {
             if (userId) {
-              const response = await fetch(`http://127.0.0.1:5000/users/${userId}`);
+              const response = await fetch(`http://44.213.189.154:8001/users/${userId}`);
               const data = await response.json();
               setUserData(data);
             }

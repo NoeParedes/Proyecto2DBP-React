@@ -11,7 +11,7 @@ function Categoria(props) {
 
       <div className ='contenedor-texto-categoria'>
         <p className='nombre-categoria'><strong>{props.nombre}</strong></p>
-        <p className='texto-categoria'>"{props.texto}"</p>
+        <p className='texto-categoria'>{props.texto}</p>
       </div>
     </div>
   );

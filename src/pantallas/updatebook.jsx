@@ -9,7 +9,7 @@ const UpdateBook = () => {
     const fetchBookData = async () => {
       try {
         if (bookId) {
-          const response = await fetch(`http://127.0.0.1:5000/books/${bookId}`);
+          const response = await fetch(`http://44.213.189.154:8002/books/${bookId}`);
           const data = await response.json();
           setBookData(data);
         }
@@ -28,7 +28,7 @@ const UpdateBook = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      await fetch(`http://127.0.0.1:5000/books/${bookData.id}`, {
+      await fetch(`http://44.213.189.154:8002/books/${bookData.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(bookData)
@@ -41,7 +41,7 @@ const UpdateBook = () => {
 
   const handleDeleteBook = async () => {
     try {
-      await fetch(`http://127.0.0.1:5000/books/${bookData.id}`, {
+      await fetch(`http://44.213.189.154:8002/books/${bookData.id}`, {
         method: 'DELETE'
       });
       window.location.href = '/mybooks';
@@ -73,7 +73,7 @@ const UpdateBook = () => {
           
 
           <div className="buttons">
-            <button type="button"> Actualizar </button>
+            <button type="button" onClick={handleFormSubmit}> Actualizar </button>
             <button type="button" onClick={handleDeleteBook}> Eliminar </button>
             <button type="button" onClick={() => { window.location.href = `/mybooks` }}> Cancelar </button>
           </div>
